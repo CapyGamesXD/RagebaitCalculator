@@ -1,6 +1,6 @@
 <script>
 	//@ts-nocheck
-	const totalClicks = 5;
+	const totalClicks = 100;
 	let clicks = $state(totalClicks);
 
 	function subtract() {
@@ -18,8 +18,14 @@
 {#if clicks > 0}
 	<div class="centerdiv">
 		<h1>You need premium to do that!</h1>
+		<div class="divider"></div>
 		{#if clicks == totalClicks}
-			<button onclick={subtract}>Get premium</button>
+			<button class="clear" onclick={subtract}>Get premium</button>
+			<button class="clear" onclick={subtract}>Get premium?</button>
+			<button class="clear" onclick={subtract}>Get premium??</button>
+			<div class="divider"></div>
+			<button onclick={subtract}>Get premium.</button>
+			<p>...Or else! :D</p>
 		{:else}
 			<button onclick={subtract}>Are you sure?</button>
 			<p>Clicks remaining: {clicks}</p>
