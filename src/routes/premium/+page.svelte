@@ -25,7 +25,7 @@
 			<button class="clear" onclick={subtract}>Get premium??</button>
 			<div class="divider"></div>
 			<button onclick={subtract}>Get premium.</button>
-			<p>...Or else! :D</p>
+			<p>There's no other option...</p>
 		{:else}
 			<button onclick={subtract}>Are you sure?</button>
 			<p>Clicks remaining: {clicks}</p>
