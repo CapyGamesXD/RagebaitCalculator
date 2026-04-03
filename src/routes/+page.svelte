@@ -4,7 +4,7 @@
 	let input = $state('');
 	let result = $state('');
 	let needAd = $state(false);
-	let timeLeft = $state(5);
+	let timeLeft = $state();
 	function add(num) {
 		input += num;
 	}
@@ -12,7 +12,7 @@
 	function calculate() {
 		needAd = true;
 
-		timeLeft = 5;
+		timeLeft = 10;
 
 		const timer = setInterval(() => {
 			if (timeLeft > 0) {
@@ -35,6 +35,7 @@
 
 {#if needAd}
 	<div class="centerdiv">
+		<h1>Watch and ad to get your 'technically correct' answer!</h1>
 		<img src="/CapyDesigns.jpg" alt="Ad" />
 		<a href="https://makerworld.com/en/@CapyDesigns">MakerWorld Link</a>
 		<h1>Time left on ad: {timeLeft}</h1>
@@ -42,13 +43,16 @@
 {:else}
 	<div class="centerdiv">
 		<h1>Ragebait Calculator</h1>
+		<p>Completely useless</p>
 
 		<div class="divider"></div>
 		<div class="calculator">
 			<div class="screen">
 				<h1>Input: {input}</h1>
 				{#if result}
-					<h1>Result: '{result}', Technically correct. :D</h1>
+					<h1>Result: {result}</h1>
+				{:else}
+					<h1>Result: Nothing entered!</h1>
 				{/if}
 			</div>
 

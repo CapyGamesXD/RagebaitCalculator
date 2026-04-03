@@ -12,20 +12,23 @@ body {
 .calculator {
 	display: flex;
 	flex-direction: column;
-	width: clamp(30rem, 50vw, 70rem);
+	width: clamp(20rem, 50vw, 70rem);
 	height: clamp(40rem, 60vh, 80rem);
 	background-color: rgb(82, 82, 82);
 	border-radius: 50px;
 	padding-left: 40px;
 	padding-right: 40px;
-	padding-top: 20px;
+	padding-top: 30px;
 	align-items: center;
 }
 
+h1 {
+	font-size: clamp(1.25rem, 2vw, 5rem);
+}
 .screen {
 	display: flex;
 	flex-direction: column;
-	width: clamp(30rem, 50vw, 70rem);
+	width: clamp(20rem, 50vw, 70rem);
 	height: clamp(10rem, 20vh, 50rem);
 	background-color: rgb(35, 35, 35);
 	border-radius: 30px;
@@ -54,7 +57,7 @@ row {
 }
 
 button {
-	width: 10vw;
+	width: clamp(4rem, 10vw, 10rem);
 	height: 7vh;
 	border-radius: 20px;
 	font-size: 20px;
