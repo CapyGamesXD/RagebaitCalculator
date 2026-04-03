@@ -1,15 +1,28 @@
 <script>
 	//@ts-nocheck
+
 	let input = $state('');
 	let result = $state('');
 	let needAd = $state(false);
+	let timeLeft = $state(5);
 	function add(num) {
 		input += num;
 	}
 
 	function calculate() {
 		needAd = true;
-		result = input;
+
+		timeLeft = 5;
+
+		const timer = setInterval(() => {
+			if (timeLeft > 0) {
+				timeLeft -= 1;
+			} else {
+				clearInterval(timer);
+				needAd = false;
+				result = input;
+			}
+		}, 1000);
 	}
 </script>
 
@@ -21,12 +34,11 @@
 />
 
 {#if needAd}
-	<ins
-		class="adsbygoogle"
-		style="display:inline-block;width:728px;height:90px"
-		data-ad-client="ca-pub-1234567890123456"
-		data-ad-slot="1234567890"
-	></ins>
+	<div class="centerdiv">
+		<img src="/CapyDesigns.jpg" alt="Ad" />
+		<a href="https://makerworld.com/en/@CapyDesigns">MakerWorld Link</a>
+		<h1>Time left on ad: {timeLeft}</h1>
+	</div>
 {:else}
 	<div class="centerdiv">
 		<h1>Ragebait Calculator</h1>
@@ -35,7 +47,9 @@
 		<div class="calculator">
 			<div class="screen">
 				<h1>Input: {input}</h1>
-				<h1>Result: {result}</h1>
+				{#if result}
+					<h1>Result: '{result}', Technically correct. :D</h1>
+				{/if}
 			</div>
 
 			<row>

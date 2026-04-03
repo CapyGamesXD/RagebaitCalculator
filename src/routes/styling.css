@@ -61,3 +61,8 @@ button {
 	outline: none;
 	border: none;
 }
+
+img {
+	width: 40vw;
+	height: auto;
+}
