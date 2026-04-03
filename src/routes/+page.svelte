@@ -50,6 +50,7 @@
 		<p>Completely useless</p>
 
 		<div class="divider"></div>
+		<a class="clear" href="/premium">Clear</a>
 		<div class="calculator">
 			<div class="screen">
 				<h1>Input: {input}</h1>

@@ -3,6 +3,7 @@ body {
 	font-optical-sizing: auto;
 }
 .centerdiv {
+	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -70,7 +71,41 @@ button {
 }
 
 img {
-	width: 40vw;
+	width: clamp(40rem, 50vw, 60rem);
 	height: auto;
 	border-radius: 30px;
+}
+
+.clear {
+	margin-bottom: 20px;
+	background-image: linear-gradient(to bottom, rgb(232, 146, 237), rgb(165, 145, 210));
+	width: clamp(5rem, 15vw, 15rem);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 7vh;
+	text-decoration: none;
+	color: white;
+	border-radius: 20px;
+	font-size: 20px;
+	box-shadow: 0px 20px 30px rgba(49, 49, 49, 0.37);
+	outline: none;
+	border: none;
+}
+
+.fullcenterdiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 50vw;
+}
+.longdiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 500vw;
 }
