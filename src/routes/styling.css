@@ -14,7 +14,8 @@ body {
 	flex-direction: column;
 	width: clamp(20rem, 50vw, 70rem);
 	height: clamp(40rem, 60vh, 80rem);
-	background-color: rgb(82, 82, 82);
+	background-image: linear-gradient(to bottom, rgb(87, 87, 87), rgb(80, 63, 94));
+	box-shadow: 0px 20px 30px rgba(49, 49, 49, 0.585);
 	border-radius: 50px;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -57,10 +58,13 @@ row {
 }
 
 button {
-	width: clamp(4rem, 10vw, 10rem);
+	width: clamp(5rem, 15vw, 15rem);
+
 	height: 7vh;
+	background-image: linear-gradient(to bottom, rgb(146, 237, 218), rgb(145, 210, 160));
 	border-radius: 20px;
 	font-size: 20px;
+	box-shadow: 0px 20px 30px rgba(49, 49, 49, 0.37);
 	outline: none;
 	border: none;
 }
@@ -68,4 +72,5 @@ button {
 img {
 	width: 40vw;
 	height: auto;
+	border-radius: 30px;
 }

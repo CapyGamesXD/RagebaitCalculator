@@ -5,6 +5,8 @@
 	let result = $state('');
 	let needAd = $state(false);
 	let timeLeft = $state();
+	let guessing = $state(false);
+	let randomElement;
 	function add(num) {
 		input += num;
 	}
@@ -13,6 +15,8 @@
 		needAd = true;
 
 		timeLeft = 10;
+		let images = ['/CapyDesigns.jpg', '/image.png', '/artwork.webp'];
+		randomElement = images[Math.floor(Math.random() * images.length)];
 
 		const timer = setInterval(() => {
 			if (timeLeft > 0) {
@@ -36,8 +40,8 @@
 {#if needAd}
 	<div class="centerdiv">
 		<h1>Watch and ad to get your 'technically correct' answer!</h1>
-		<img src="/CapyDesigns.jpg" alt="Ad" />
-		<a href="https://makerworld.com/en/@CapyDesigns">MakerWorld Link</a>
+		<img src={randomElement} alt="Ad" />
+
 		<h1>Time left on ad: {timeLeft}</h1>
 	</div>
 {:else}
@@ -50,9 +54,9 @@
 			<div class="screen">
 				<h1>Input: {input}</h1>
 				{#if result}
-					<h1>Result: {result}</h1>
+					<h1>Answer = {result}; You're welcome. :D</h1>
 				{:else}
-					<h1>Result: Nothing entered!</h1>
+					<h1>Click the '=' to get your answer</h1>
 				{/if}
 			</div>
 
@@ -110,8 +114,8 @@
 			<row>
 				<button
 					onclick={() => {
-						add('*');
-					}}>*</button
+						add('x');
+					}}>x</button
 				>
 				<button
 					onclick={() => {
