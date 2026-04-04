@@ -28,6 +28,10 @@
 			}
 		}, 1000);
 	}
+
+	function back() {
+		input = 'Back';
+	}
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,6 +55,7 @@
 
 		<div class="divider"></div>
 		<a class="clear" href="/premium">Clear</a>
+		<button class="disappear" onclick={back}>Back</button>
 		<div class="calculator">
 			<div class="screen">
 				<h1>Input: {input}</h1>

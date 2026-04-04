@@ -16,5 +16,5 @@
 	<div class="divider"></div>
 
 	<h1>Nope.</h1>
-	<a href="/premium" class="clear">Back to start</a>
+	<a href="/premium" class="clear">Home</a>
 </div>
