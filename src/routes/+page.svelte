@@ -15,7 +15,14 @@
 		needAd = true;
 
 		timeLeft = 10;
-		let images = ['/CapyDesigns.jpg', '/image.png', '/artwork.webp'];
+		let images = [
+			'/CapyDesigns.jpg',
+			'/image.png',
+			'/artwork.webp',
+			'/image-2.png',
+			'/5838.jpg',
+			'/logo.png'
+		];
 		randomElement = images[Math.floor(Math.random() * images.length)];
 
 		const timer = setInterval(() => {
@@ -30,7 +37,7 @@
 	}
 
 	function back() {
-		input = 'Back';
+		input = "It's gone";
 	}
 </script>
 
