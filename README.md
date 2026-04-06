@@ -1,43 +1,8 @@
-# sv
+# Ragebait Calculator!
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This project is made to be as irritating as possible! It's got various features in place to draw out a simple process.
 
-## Creating a project
+The UI is simple and clean.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.13.2 create --template minimal --types ts --add prettier eslint --install npm RagebaitCalculator
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
-# RagebaitCalculator
+When you click the equals button, an ad plays! After you've finally finished the 10 second long ad, it shows your 'technically correct' answer!
+If you want to clear it, you have to get premium, which... Well... It's a process! Have fun with this project! :D

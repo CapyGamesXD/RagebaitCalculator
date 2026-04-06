@@ -10,7 +10,7 @@
 />
 
 <div class="centerdiv">
-	{#each scrolls as scroll}
+	{#each scrolls as whyareyoulookingatmycode}
 		<h1>Scroll down!</h1>
 	{/each}
 	<div class="divider"></div>
