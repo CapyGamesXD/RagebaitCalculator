@@ -6,7 +6,7 @@
 	let needAd = $state(false);
 	let timeLeft = $state();
 	let guessing = $state(false);
-	let randomElement;
+	let randomElement = $state();
 	function add(num) {
 		input += num;
 	}
@@ -43,7 +43,7 @@
 
 {#if needAd}
 	<div class="centerdiv">
-		<h1>Watch and ad to get your 'technically correct' answer!</h1>
+		<h1>Watch an ad to get your 'technically correct' answer!</h1>
 		<img src={randomElement} alt="Ad" />
 
 		<h1>Time left on ad: {timeLeft}</h1>
